@@ -110,7 +110,7 @@ sshfido2                                   1/1     Running   0          10m
 
 There is a `cleanup.sh` script to remove all artifacts as well.
 
-# Testing ssh with MFA to the container
+# Testing ssh to the container
 
 After the script is run, from an external shell try:
 

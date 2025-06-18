@@ -69,6 +69,7 @@ sed \
   -e "s|#PermitRootLogin prohibit-password|PermitRootLogin prohibit-password|" \
   -e "s|#PasswordAuthentication.*|PasswordAuthentication no|" \
   -e "s|#PermitEmptyPasswords.*|PermitEmptyPasswords no|" \
+  -e "s|#Banner.*|Banner /root/resources/banner.txt|" \
   > /etc/ssh/sshd_config
 
 # restart sshd

@@ -126,6 +126,11 @@ You should be prompted to enter your hardware security key FIDO2 PIN, and perfor
 ```
 $ ssh -l testuser -p 30222 52.116.156.203 
 Warning: Permanently added '[52.116.156.203]:30222' (ED25519) to the list of known hosts.
+######################################################
+#
+# This server requires SSH with a FIDO2 security key
+#
+######################################################
 Confirm user presence for key ED25519-SK SHA256:buIw6WrE0mq6cDIieLzFKFb9s9272+eVGGKsZDh7PUM
 Enter PIN for ED25519-SK key /Users/sweeden/.ssh/id_ed25519_sk:  <ENTER FIDO2 PIN FOR HSK HERE>
 Confirm user presence for key ED25519-SK SHA256:buIw6WrE0mq6cDIieLzFKFb9s9272+eVGGKsZDh7PUM

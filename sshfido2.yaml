@@ -1,0 +1,33 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: sshfido2
+  labels:
+    app: sshfido2
+spec:
+  containers:
+  - name: sshfido2
+    image: us.icr.io/sweeden/sshfido2:latest
+    ports:
+      - containerPort: 22
+    securityContext:
+      privileged: true
+    envFrom:
+    - secretRef:
+        name: sshfido2
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: sshfido2
+spec:
+  ports:
+    - port: 22
+      targetPort: 22
+      name: sshfido2
+      protocol: TCP
+      nodePort: 30222
+  selector:
+    app: sshfido2
+  type: NodePort
+

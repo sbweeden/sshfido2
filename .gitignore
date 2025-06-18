@@ -1,0 +1,3 @@
+.DS_Store
+.env*
+resources/id_ed25519_sk.pub

@@ -2,6 +2,8 @@ This repo contains configuration setup for sshd on RHEL9 with a hardware securit
 
 Inspiration for this setup comes from instructions for sshd at: https://developers.yubico.com/SSH/Securing_SSH_with_FIDO2.html
 
+A fairly detailed blog on the topic can also be found here: https://swjm.blog/the-complete-guide-to-ssh-with-fido2-security-keys-841063a04252
+
 # SSH client Setup Requirements
 
 You need a client machine with ssh 8.3 or newer. This includes support for hardware security keys, per documentation in [link above](https://developers.yubico.com/SSH/Securing_SSH_with_FIDO2.html). In my testing I used an M1 mac with MacOS Sequoia 15.5, and installed OpenSSH just like those instructions indicate:
